@@ -84,14 +84,15 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
+./copy_to_backup.sh
 
-
-
+(no output)
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
+nano copy_to_backup.sh
 
 
 
@@ -104,9 +105,9 @@ c. print out "I'm done backing up"
 
 Write out the code in your file below...
 ----------
-
-
-
+mkdir -p ~/backup
+cp *.txt backup
+echo "I'm done backing up"
 ==========
 10. Create a directory in your home called test
 ----------
@@ -116,7 +117,7 @@ Write out the code in your file below...
 What commands did you use to do this?
 ----------
 
-
+touch 1.txt 2.txt
 
 ==========
 12. Move the script that you created into this directory.
@@ -124,7 +125,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+mv copy_to_backup.sh test
 
 ==========
 13. Run your script.
@@ -132,10 +133,27 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+./copy_to_backup.sh
 
 ==========
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
 ----------
+ls
+Adlm				Pictures			ipe.properties
+Adobe				Public				isus
+Applications			QLData				mtec1003-lab-03
+Desktop				Things				mtec1003-lab-03.tar.gz
+Documents			Wilson-MTEC2230-Fall2018	pg1232.txt
+Downloads			__MACOSX			pizza
+Homu.txt			backup				pymel.log
+Library				drills.py			stuff
+MPLABXProjects			gmacias				test
+Movies				google.txt			xgen
+Music				gooooooooa
+New Unity Project		grapa.tar
+
+cd backup
+ls
+1.txt			2.txt
